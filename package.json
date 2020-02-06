@@ -1,9 +1,14 @@
 {
   "name": "react-ui-bb",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "browser": "lib/index.umd.js",
+  "module": "lib/index.es.js",
   "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "rm -rf lib && npm run build",
+    "postbuild": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
     "start": "styleguidist server",
     "test": "jest"
   },
@@ -28,6 +33,9 @@
     "url": "https://github.com/keonik/react-ui-bb/issues"
   },
   "homepage": "https://github.com/keonik/react-ui-bb#readme",
+  "files": [
+    "/lib"
+  ],
   "peerDependencies": {
     "@emotion/core": "^10.x",
     "@emotion/styled": "^10.x",
@@ -46,7 +54,14 @@
     "jest": "^25.1.0",
     "jest-emotion": "^10.0.27",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "rollup": "^1.31.0",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.2",
+    "rollup-plugin-terser": "^5.2.0",
+    "rollup-plugin-uglify": "^6.0.4"
   },
   "dependencies": {
     "react-styleguidist": "^10.6.1",
