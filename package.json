@@ -11,7 +11,7 @@
     "prepublishOnly": "rm -rf lib && npm run build",
     "postbuild": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
     "start": "styleguidist server",
-    "test": "jest"
+    "test": "jest && echo 'done'"
   },
   "repository": {
     "type": "git",

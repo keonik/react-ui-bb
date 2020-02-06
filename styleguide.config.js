@@ -1,3 +1,4 @@
+const path = require("path");
 module.exports = {
   webpackConfig: {
     module: {
@@ -9,6 +10,6 @@ module.exports = {
   title: "React UI Building Blocks",
   styleguideDir: "dist-docs",
   moduleAliases: {
-    "react-sample-components-library": path.resolve(__dirname, "src")
+    "react-ui-bb": path.resolve(__dirname, "src")
   }
 };
