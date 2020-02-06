@@ -1,0 +1,52 @@
+{
+  "name": "react-ui-bb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "styleguidist server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keonik/react-ui-bb.git"
+  },
+  "keywords": [
+    "react",
+    "emotion",
+    "typescript",
+    "component library",
+    "building blocks",
+    "ui",
+    "styleguidist",
+    "babel",
+    "webpack"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/keonik/react-ui-bb/issues"
+  },
+  "homepage": "https://github.com/keonik/react-ui-bb#readme",
+  "peerDependencies": {
+    "@emotion/core": "^10.x",
+    "@emotion/styled": "^10.x",
+    "react": "^16.x",
+    "react-dom": "^16.x"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-react": "^7.8.3",
+    "@emotion/core": "^10.0.27",
+    "@emotion/styled": "^10.0.27",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "dependencies": {
+    "react-styleguidist": "^10.6.1",
+    "webpack": "^4.41.5"
+  }
+}
