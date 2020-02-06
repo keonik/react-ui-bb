@@ -1,2 +1,3 @@
-import { matchers } from "jest-emotion";
+import { matchers } from 'jest-emotion';
+
 expect.extend(matchers);

@@ -1,14 +1,14 @@
-import React from "react";
+import React from 'react';
 // styles
-import styled from "@emotion/styled";
-import { font, primaryColors, shape } from "config/styles";
+import styled from '@emotion/styled';
+import { font, primaryColors, shape } from 'config/styles';
 
 const Wrapper = styled.button`
-  ${font};
-  ${primaryColors};
-  ${shape};
+    ${font};
+    ${primaryColors};
+    ${shape};
 `;
 
 export default function Button({ text, onClick }) {
-  return <Wrapper onClick={onClick}>{text}</Wrapper>;
+    return <Wrapper onClick={onClick}>{text}</Wrapper>;
 }

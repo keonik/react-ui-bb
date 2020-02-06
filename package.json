@@ -1,71 +1,88 @@
 {
-  "name": "react-ui-bb",
-  "version": "1.0.1",
-  "description": "",
-  "main": "lib/index.js",
-  "browser": "lib/index.umd.js",
-  "module": "lib/index.es.js",
-  "scripts": {
-    "build": "rollup -c",
-    "docs:build": "styleguidist build",
-    "prepublishOnly": "rm -rf lib && npm run build",
-    "postbuild": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
-    "start": "styleguidist server",
-    "test": "jest && echo 'done'"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/keonik/react-ui-bb.git"
-  },
-  "keywords": [
-    "react",
-    "emotion",
-    "typescript",
-    "component library",
-    "building blocks",
-    "ui",
-    "styleguidist",
-    "babel",
-    "webpack"
-  ],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/keonik/react-ui-bb/issues"
-  },
-  "homepage": "https://github.com/keonik/react-ui-bb#readme",
-  "files": [
-    "/lib"
-  ],
-  "peerDependencies": {
-    "@emotion/core": "^10.x",
-    "@emotion/styled": "^10.x",
-    "react": "^16.x",
-    "react-dom": "^16.x"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.8.4",
-    "@babel/preset-env": "^7.8.4",
-    "@babel/preset-react": "^7.8.3",
-    "@emotion/core": "^10.0.27",
-    "@emotion/styled": "^10.0.27",
-    "@testing-library/react": "^9.4.0",
-    "babel-loader": "^8.0.6",
-    "babel-plugin-module-resolver": "^4.0.0",
-    "jest": "^25.1.0",
-    "jest-emotion": "^10.0.27",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "rollup": "^1.31.0",
-    "rollup-plugin-babel": "^4.3.3",
-    "rollup-plugin-commonjs": "^10.1.0",
-    "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-peer-deps-external": "^2.2.2",
-    "rollup-plugin-terser": "^5.2.0",
-    "rollup-plugin-uglify": "^6.0.4"
-  },
-  "dependencies": {
-    "react-styleguidist": "^10.6.1",
-    "webpack": "^4.41.5"
-  }
+    "name": "react-ui-bb",
+    "version": "1.0.1",
+    "description": "",
+    "main": "lib/index.js",
+    "browser": "lib/index.umd.js",
+    "module": "lib/index.es.js",
+    "scripts": {
+        "build": "rollup -c",
+        "docs:build": "styleguidist build",
+        "format": "prettier --write 'src/**/*' && eslint --fix  'src/**/*.{js, jsx, ts, tsx}'",
+        "lint": "eslint 'src/**/*.{js, jsx, ts, tsx}'",
+        "prepublishOnly": "rm -rf lib && npm run build",
+        "postbuild": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
+        "start": "styleguidist server",
+        "test": "jest && echo 'done'"
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/keonik/react-ui-bb.git"
+    },
+    "keywords": [
+        "react",
+        "emotion",
+        "typescript",
+        "component library",
+        "building blocks",
+        "ui",
+        "styleguidist",
+        "babel",
+        "webpack"
+    ],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/keonik/react-ui-bb/issues"
+    },
+    "homepage": "https://github.com/keonik/react-ui-bb#readme",
+    "files": [
+        "/lib"
+    ],
+    "peerDependencies": {
+        "@emotion/core": "^10.x",
+        "@emotion/styled": "^10.x",
+        "react": "^16.x",
+        "react-dom": "^16.x"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.8.4",
+        "@babel/preset-env": "^7.8.4",
+        "@babel/preset-react": "^7.8.3",
+        "@emotion/core": "^10.0.27",
+        "@emotion/styled": "^10.0.27",
+        "@testing-library/react": "^9.4.0",
+        "@typescript-eslint/eslint-plugin": "^2.19.0",
+        "babel-eslint": "^10.0.3",
+        "babel-loader": "^8.0.6",
+        "babel-plugin-module-resolver": "^4.0.0",
+        "eslint": "^6.8.0",
+        "eslint-config-airbnb": "^18.0.1",
+        "eslint-config-airbnb-base": "^14.0.0",
+        "eslint-config-prettier": "^6.10.0",
+        "eslint-plugin-import": "^2.20.1",
+        "eslint-plugin-jsx-a11y": "^6.2.3",
+        "eslint-plugin-prettier": "^3.1.2",
+        "eslint-plugin-react": "^7.18.3",
+        "eslint-plugin-react-hooks": "^2.3.0",
+        "jest": "^25.1.0",
+        "jest-emotion": "^10.0.27",
+        "prettier": "^1.19.1",
+        "react": "^16.12.0",
+        "react-dom": "^16.12.0",
+        "react-styleguidist": "^10.6.1",
+        "rollup": "^1.31.0",
+        "rollup-plugin-babel": "^4.3.3",
+        "rollup-plugin-commonjs": "^10.1.0",
+        "rollup-plugin-node-resolve": "^5.2.0",
+        "rollup-plugin-peer-deps-external": "^2.2.2",
+        "rollup-plugin-terser": "^5.2.0",
+        "rollup-plugin-uglify": "^6.0.4",
+        "typescript": "^3.7.5",
+        "webpack": "^4.41.5"
+    },
+    "dependencies": {}
 }
