@@ -31,7 +31,7 @@
         // disallow class components
         "react/prefer-stateless-function": [2, { "ignorePureComponents": true }],
         // allow jsx in .js files
-        "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
+        "react/jsx-filename-extension": ["error", { "extensions": [".ts", ".tsx"] }],
         // all prettier file errors
         "prettier/prettier": "error",
         // turn off propType validation

@@ -30,8 +30,7 @@
         "building blocks",
         "ui",
         "styleguidist",
-        "babel",
-        "webpack"
+        "testing library"
     ],
     "author": "",
     "license": "ISC",
@@ -52,6 +51,7 @@
         "@babel/core": "^7.8.4",
         "@babel/preset-env": "^7.8.4",
         "@babel/preset-react": "^7.8.3",
+        "@babel/preset-typescript": "^7.8.3",
         "@emotion/core": "^10.0.27",
         "@emotion/styled": "^10.0.27",
         "@testing-library/react": "^9.4.0",
@@ -72,6 +72,7 @@
         "jest-emotion": "^10.0.27",
         "prettier": "^1.19.1",
         "react": "^16.12.0",
+        "react-docgen-typescript": "^1.16.2",
         "react-dom": "^16.12.0",
         "react-styleguidist": "^10.6.1",
         "rollup": "^1.31.0",
@@ -81,6 +82,8 @@
         "rollup-plugin-peer-deps-external": "^2.2.2",
         "rollup-plugin-terser": "^5.2.0",
         "rollup-plugin-uglify": "^6.0.4",
+        "source-map-loader": "^0.2.4",
+        "ts-loader": "^6.2.1",
         "typescript": "^3.7.5",
         "webpack": "^4.41.5"
     },

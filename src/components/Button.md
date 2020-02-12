@@ -1,6 +1,6 @@
 A very simple button.
 
-```jsx
+```js
 import { Button } from 'react-ui-bb'
 ;<Button text="We Salute You!" />
 ```
