@@ -8,15 +8,12 @@
     "scripts": {
         "build": "rollup -c",
         "docs:build": "styleguidist build",
-        "format": "prettier --write 'src/**/*' && eslint --fix  'src/**/*.{js, jsx, ts, tsx}'",
-        "lint": "eslint 'src/**/*.{js, jsx, ts, tsx}'",
+        "format": "prettier --write 'src/**/*' && eslint --fix  'src/**/*.{js,ts,tsx}'",
+        "lint": "eslint src/**/*.{js,ts,tsx}",
         "prepublishOnly": "rm -rf lib && npm run build",
         "postbuild": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
         "start": "styleguidist server",
         "test": "jest && echo 'done'"
-    },
-    "eslintConfig": {
-        "extends": "react-app"
     },
     "repository": {
         "type": "git",
@@ -32,7 +29,7 @@
         "styleguidist",
         "testing library"
     ],
-    "author": "",
+    "author": "John Fay",
     "license": "ISC",
     "bugs": {
         "url": "https://github.com/keonik/react-ui-bb/issues"
@@ -54,6 +51,7 @@
         "@babel/preset-typescript": "^7.8.3",
         "@emotion/core": "^10.0.27",
         "@emotion/styled": "^10.0.27",
+        "@rollup/plugin-typescript": "^3.0.0",
         "@testing-library/react": "^9.4.0",
         "@typescript-eslint/eslint-plugin": "^2.19.0",
         "babel-eslint": "^10.0.3",
@@ -61,7 +59,6 @@
         "babel-plugin-module-resolver": "^4.0.0",
         "eslint": "^6.8.0",
         "eslint-config-airbnb": "^18.0.1",
-        "eslint-config-airbnb-base": "^14.0.0",
         "eslint-config-prettier": "^6.10.0",
         "eslint-plugin-import": "^2.20.1",
         "eslint-plugin-jsx-a11y": "^6.2.3",
@@ -82,8 +79,6 @@
         "rollup-plugin-peer-deps-external": "^2.2.2",
         "rollup-plugin-terser": "^5.2.0",
         "rollup-plugin-uglify": "^6.0.4",
-        "source-map-loader": "^0.2.4",
-        "ts-loader": "^6.2.1",
         "typescript": "^3.7.5",
         "webpack": "^4.41.5"
     },

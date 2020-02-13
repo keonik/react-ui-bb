@@ -18,7 +18,7 @@ module.exports = {
         },
     },
     title: 'React UI Building Blocks',
-    styleguideDir: 'dist-docs',
+    styleguideDir: 'docs',
     moduleAliases: {
         'react-ui-bb': path.resolve(__dirname, 'src'),
     },
