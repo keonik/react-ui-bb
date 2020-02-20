@@ -19,11 +19,22 @@ interface ButtonProps {
     variant: 'text' | 'outlined' | 'contained';
 }
 
+const float = '2px';
 const Wrapper = styled.button`
     ${convertStyleObjectToCSS(styles.button)};
     font-weight: ${styles.font.fontWeight};
     ${props => styles.color[`${props.color}`]};
-    ${props => convertStyleObjectToCSS(styles.size[`${props.size}`])}
+    ${props => convertStyleObjectToCSS(styles.size[`${props.size}`])};
+    outline: none;
+    transition: transform 0.5s cubic-bezier(0.1, 1.51, 1, 1.22);
+    &:hover {
+        -webkit-transform: translateY(-${float});
+        transform: translateY(-${float});
+    }
+    &:active {
+        -webkit-transform: translateY(${float});
+        transform: translateY(${float});
+    }
 `;
 
 const Button: React.FC<ButtonProps> = ({ onClick, text, children, color, size }: ButtonProps) => {
