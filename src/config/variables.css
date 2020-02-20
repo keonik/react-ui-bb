@@ -1,0 +1,10 @@
+:root {
+    --primary-background: #005dff;
+    --primary-color: #f0f0f0;
+
+    --secondary-background: #f0f0f0;
+    --secondary-color: #005dff;
+
+    --error-background: #ff0000;
+    --error-color: #f0f0f0;
+}
