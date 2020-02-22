@@ -10,6 +10,7 @@ module.exports = {
         'prettier/react',
         'eslint:recommended',
         'plugin:@typescript-eslint/recommended',
+        'plugin:import/typescript',
     ],
     globals: {
         Atomics: 'readonly',
@@ -32,6 +33,8 @@ module.exports = {
     },
     plugins: ['react', 'prettier', 'react-hooks'],
     rules: {
+        // 'import/no-relative-parent-imports': 'error',
+        'import/prefer-default-export': 0,
         'import/named': 2,
         'no-console': 'warn',
         // disallow class components
