@@ -1,7 +1,3 @@
-const { defaults } = require('jest-config');
-
-console.log('jest setupTests bitch!');
-
 module.exports = {
     verbose: true,
     setupFilesAfterEnv: ['./src/setupTests.ts'],
