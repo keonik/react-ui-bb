@@ -4,7 +4,7 @@ import styled from '@emotion/styled';
 import { styles } from 'config/styles';
 import { convertStyleObjectToCSS } from 'utils/StyleUtilities';
 
-interface ButtonProps {
+export interface ButtonProps {
     children?: any;
     color: 'primary' | 'secondary' | 'error';
     disabled: boolean;
@@ -37,7 +37,13 @@ const Wrapper = styled.button`
     }
 `;
 
-const Button: React.FC<ButtonProps> = ({ onClick, text, children, color, size }: ButtonProps) => {
+export const Button: React.FC<ButtonProps> = ({
+    onClick,
+    text,
+    children,
+    color,
+    size,
+}: ButtonProps) => {
     return (
         <Wrapper color={color} onClick={onClick} size={size}>
             {children}
@@ -57,5 +63,3 @@ Button.defaultProps = {
     text: '',
     variant: 'contained',
 };
-
-export default Button;
