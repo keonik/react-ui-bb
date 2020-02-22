@@ -1,3 +1,5 @@
 src/setupTests.js
 src/index.js
 **/*.config.js
+**/*.test.tsx
+**/*.spec.tsx
