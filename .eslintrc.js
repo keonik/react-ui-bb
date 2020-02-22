@@ -33,6 +33,7 @@ module.exports = {
     },
     plugins: ['react', 'prettier', 'react-hooks'],
     rules: {
+        'import/extensions': 0,
         // 'import/no-relative-parent-imports': 'error',
         'import/prefer-default-export': 0,
         'import/named': 2,
