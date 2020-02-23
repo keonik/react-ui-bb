@@ -24,7 +24,7 @@ const Wrapper = styled.button`
     ${convertStyleObjectToCSS(styles.button)};
     font-weight: ${styles.font.fontWeight};
     ${(props): string => styles.color[`${props.color}`]};
-    ${(props): string => convertStyleObjectToCSS(styles.size[`${props.size}`])};
+    ${(props): string[] => convertStyleObjectToCSS(styles.size[`${props.style}`])};
     outline: none;
     transition: transform 0.5s cubic-bezier(0.1, 1.51, 1, 1.22);
     &:hover {
@@ -45,7 +45,7 @@ export const Button: React.FC<ButtonProps> = ({
     size,
 }: ButtonProps) => {
     return (
-        <Wrapper color={color} onClick={onClick} size={size}>
+        <Wrapper color={color} onClick={onClick}>
             {children}
             {text}
         </Wrapper>
