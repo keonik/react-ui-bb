@@ -62,3 +62,4 @@ Button.defaultProps = {
     text: '',
     variant: 'contained',
 };
+export default Button;
