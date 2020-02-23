@@ -1,6 +1,6 @@
 {
     "name": "react-ui-bb",
-    "version": "1.0.1",
+    "version": "0.1.0",
     "description": "Template react, typescript, and emotion component library documented with styleguidist",
     "main": "lib/index.js",
     "browser": "lib/index.umd.js",
