@@ -1,5 +1,4 @@
 import React from 'react';
-// styles
 import styled from '@emotion/styled';
 import { styles } from 'config/styles';
 import { convertStyleObjectToCSS } from 'utils/StyleUtilities';
@@ -23,8 +22,8 @@ const float = '2px';
 const Wrapper = styled.button`
     ${convertStyleObjectToCSS(styles.button)};
     font-weight: ${styles.font.fontWeight};
-    ${(props): string => styles.color[`${props.color}`]};
-    ${(props): string[] => convertStyleObjectToCSS(styles.size[`${props.style}`])};
+    ${({ color = '' }) => styles.color[color]};
+    ${({ theme }) => convertStyleObjectToCSS(theme)}
     outline: none;
     transition: transform 0.5s cubic-bezier(0.1, 1.51, 1, 1.22);
     &:hover {
@@ -45,7 +44,7 @@ export const Button: React.FC<ButtonProps> = ({
     size,
 }: ButtonProps) => {
     return (
-        <Wrapper color={color} onClick={onClick}>
+        <Wrapper color={color} onClick={onClick} theme={styles.size[size]}>
             {children}
             {text}
         </Wrapper>
