@@ -2,7 +2,7 @@
     "compilerOptions": {
         "baseUrl": "src",
         "outDir": "/dist",
-        "module": "commonjs",
+        "module": "ESNext",
         "target": "es5",
         "lib": ["es6", "dom", "es2017"],
         "sourceMap": true,
@@ -27,5 +27,13 @@
         "noEmit": true
     },
     "include": ["src"],
-    "exclude": ["node_modules", "build", "scripts", "acceptance-tests", "webpack", "jest", "src/setupTests.ts"]
+    "exclude": [
+        "node_modules",
+        "build",
+        "scripts",
+        "acceptance-tests",
+        "webpack",
+        "jest",
+        "src/setupTests.ts"
+    ]
 }
