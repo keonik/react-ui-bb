@@ -63,7 +63,7 @@
   "bugs": {
     "url": "https://github.com/keonik/react-ui-bb/issues"
   },
-  "homepage": "https://github.com/keonik/react-ui-bb#readme",
+  "homepage": "https://keonik.github.io/react-ui-bb/",
   "devDependencies": {
     "@babel/preset-react": "^7.8.3",
     "@babel/preset-typescript": "^7.8.3",
