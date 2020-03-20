@@ -1,12 +1,28 @@
 {
-    "presets": ["@babel/preset-env", "@babel/preset-react", "@babel/preset-typescript"],
-    "plugins": [
-        [
-            "module-resolver",
-            {
-                "root": ["./src"],
-                "extensions": [".ts", ".tsx", ".js"]
-            }
-        ]
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "esmodules": true
+        }
+      }
+    ],
+    "@babel/preset-react",
+    "@babel/preset-typescript",
+    "@emotion/babel-preset-css-prop"
+  ],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./src"],
+        "alias": {
+          "components": "./src/components",
+          "config": "./src/config",
+          "utils": "./src/utils"
+        }
+      }
     ]
+  ]
 }

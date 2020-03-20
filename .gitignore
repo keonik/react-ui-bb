@@ -1,3 +1,16 @@
-node_modules/
-docs/
-lib/
+*.log
+.DS_Store
+node_modules
+.cache
+
+# builds
+dist
+
+node_modules
+
+# styleguidist
+public
+
+# test files
+junit.xml
+coverage
